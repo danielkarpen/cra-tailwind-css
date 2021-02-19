@@ -14,6 +14,11 @@ function NavBar() {
             Stateful
           </Link>
         </li>
+        <li>
+          <Link to="./countdown" className="hover:bg-gray-400">
+            CountDown
+          </Link>
+        </li>
       </ul>
     </nav>
   );

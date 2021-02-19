@@ -1,10 +1,12 @@
-import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
-import { NavBar, SimpleComponent, StatefulComponent } from "./components";
-
-console.log(Switch, Route, Link);
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {
+  CountDown,
+  NavBar,
+  SimpleComponent,
+  StatefulComponent,
+} from "./components";
 
 function App() {
-  // TODO: Pass a prop
   return (
     <Router>
       <NavBar />
@@ -15,6 +17,10 @@ function App() {
 
         <Route path="/stateful-component">
           <StatefulComponent />
+        </Route>
+
+        <Route path="/countdown">
+          <CountDown />
         </Route>
       </Switch>
     </Router>
