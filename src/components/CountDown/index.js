@@ -28,10 +28,12 @@ const Component = () => {
       <Form submitHandler={handleSubmit} />
       <p
         className={`mt-4 text-6xl text-center ${
-          timeRemaining <= 3 ? "text-red-500" : ""
+          timeRemaining <= 3 && timeRemaining > 0
+            ? "text-red-500 animate-ping"
+            : ""
         }`}
       >
-        {timeRemaining} seconds
+        {timeRemaining}
       </p>
     </>
   );
